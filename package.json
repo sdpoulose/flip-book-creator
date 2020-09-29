@@ -1,0 +1,14 @@
+{
+  "name": "flip-book-creator",
+  "version": "1.0.0",
+  "description": "flip book creator",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "solomon",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^10.1.3"
+  }
+}
