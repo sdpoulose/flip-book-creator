@@ -1,7 +1,6 @@
 const electron = require('electron');
 const url = require('url');
 const path = require('path');
-const ffmpeg = require('ffmpeg');
 
 const {app, BrowserWindow} = electron;
 

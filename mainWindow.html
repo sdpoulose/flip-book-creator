@@ -2,11 +2,14 @@
 <html lang="en">
 <head>
     <title> Flip Book Creator </title>
+    <link rel = "stylesheet" href = "mainWindow.css">
 </head>
 <body>
     <h1> Flip Book Creator </h1>
-    <input type = "file" id = "file-selector" accept = ".mp4">
-    <script src = "mainWindow.js"> </script>
+    <div id = "message" ></div>
+    <input type = "file" accept = "video/*"/>
+    <video id = "video-id" controls autoplay> </video>
+    <script src = "mainWindow.js"> </script> 
     <br>
     <br>
     <button onclick = "createFlipBook()" > <h3> Create Flip Book </h3> </button>
