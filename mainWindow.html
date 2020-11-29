@@ -1,24 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title> Flip Book Creator </title>
-    <link rel = "stylesheet" href = "mainWindow.css">
-</head>
-<body class = "bg">
-    <h1> Flip Book Creator </h1>
-    <div id = "message" ></div>
-    <input type = "file" accept = "video/*"/>
-    <video id = "video-id" controls autoplay> </video>
-    <script src = "mainWindow.js"> </script> 
-    <br>
-    <br>
-    <button id = "snap" onclick="capture()"> <h3> Create Flip Book </h3> </button>
-    <canvas id="canvas" width="640" height="480"></canvas>
-    <script src = "mainWindow.js">
-        
+    <link rel="stylesheet" href="mainWindow.css">
+    <script src="jquery-3.5.1.min.js"></script>
+    <script>
+        $(function () {
+
+        });
     </script>
-      
-      </body>
-      </html>
+</head>
+
+<body class="bg">
+    <h1> Flip Book Creator </h1>
+    <div id="message"></div>
+    <input type="file" accept="video/*" />
+    <video id="video-id" controls autoplay> </video>
+    <script src="mainWindow.js"> </script>
+    <br>
+    <br>
+    <button id="snap" onclick="capture()">
+        <h3> Create Flip Book </h3>
+    </button>
+    <canvas id="canvas" width="640" height="480"></canvas>
+    <script src="mainWindow.js">
+
+    </script>
+
 </body>
+
+</html>
+</body>
+
 </html>

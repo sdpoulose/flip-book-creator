@@ -1,5 +1,5 @@
 (function localFileVideoPlayer() {
-	'use strict'
+  'use strict'
   var URL = window.URL || window.webkitURL
   var displayMessage = function (message, isError) {
     var element = document.querySelector('#message')
@@ -27,22 +27,22 @@
   inputNode.addEventListener('change', playSelectedFile, false)
 })()
 
-var video=document.querySelector('video');
-var canvas=document.querySelector('canvas');
-var context=canvas.getContext('2d');
-var w,h,ratio;
-      
-video.addEventListener('loadedmetadata', function() {
-  ratio = video.videoWidth/video.videoHeight;
-  w = video.videoWidth-100;
-  h = parseInt(w/ratio,10);
+var video = document.querySelector('video');
+var canvas = document.querySelector('canvas');
+var context = canvas.getContext('2d');
+var w, h, ratio;
+
+video.addEventListener('loadedmetadata', function () {
+  ratio = video.videoWidth / video.videoHeight;
+  w = video.videoWidth - 100;
+  h = parseInt(w / ratio, 10);
   canvas.width = w;
   canvas.height = h;
-} ,false);
-      
+}, false);
+
 function snap() {
-  context.fillRect(0,0,w,h);
-  context.drawImage(video,0,0,w,h);
+  context.fillRect(0, 0, w, h);
+  context.drawImage(video, 0, 0, w, h);
   var link = document.createElement('a');
   link.download = 'filename.png';
   link.href = document.getElementById('canvas').toDataURL()
