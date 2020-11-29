@@ -1,3 +1,9 @@
+/*
+  ##
+  ## code to allow automatic playback of selected video
+  ##
+*/
+
 (function localFileVideoPlayer() {
   'use strict'
   var URL = window.URL || window.webkitURL
